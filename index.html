@@ -6,11 +6,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form</title>
+  <link rel="stylesheet" href="stylesheet.css"/>
 </head>
 
 <body>
-  <form>
-    
+  <form id="signup" name="signup" action="record/record.txt" method="post">
+    <p>
+      This is not a real online service! You know you need something like this
+      in you life to help you realize your deepest dreams. Sign up
+      <span>now</span> to get started.
+    </p>
+    <p>You <span>know</span> you want to.</p>
+
+    <p>Let's do this!</p>
+    <div class="names">
+      <label for="firstname">FIRST NAME</label>
+      <input type="text" id="firstname" name="firstname">
+
+      <label for="lastname">LAST NAME</label>
+      <input type="text" id="lastmame" name="lastname">
+    </div>
+
+    <div class="emailphone">
+      <label for="email">EMAIL</label>
+      <input type="email" name="email" id="email" placeholder="email@site.com">
+
+      <label for="phone">PHONE NUMBER</label>
+      <input type="tel" name="phone" id="phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+    </div>
+
+    <div class="passwords">
+      <label for="password">PASSWORD</label>
+      <input type="password" name="password" id="password">
+
+      <label for="confirm">CONFIRM PASSWORD</label>
+      <input type="password" name="confirm" id="confirm">
+    </div>
+
+    <div class="bottom">
+      <input type="submit" value="Create Account">
+      <p>Already have an account? <a href="">Log in</a></p>
+    </div>
   </form>
 </body>
 
