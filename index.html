@@ -39,35 +39,47 @@
     </p>
     <p>You <span>know</span> you want to.</p>
 
-    <p>Let's do this!</p>
-    <div class="names">
-      <label for="firstname">FIRST NAME</label>
-      <input type="text" id="firstname" name="firstname">
+    <p class="aboveform">Let's do this!</p>
+    <div class="forms">
+      <div class="names">
+        <label for="firstname">FIRST NAME</label>
+        <input type="text" id="firstname" name="firstname">
 
-      <label for="lastname">LAST NAME</label>
-      <input type="text" id="lastmame" name="lastname">
+        <label for="lastname">LAST NAME</label>
+        <input type="text" id="lastmame" name="lastname">
+      </div>
+
+      <div class="emailphone">
+        <label for="email">EMAIL</label>
+        <input type="email" name="email" id="email"
+          placeholder="email@site.com">
+
+        <label for="phone">PHONE NUMBER</label>
+        <input type="tel" name="phone" id="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+      </div>
+
+      <div class="passwords">
+        <div>
+          <label for="password">PASSWORD</label>
+          <input type="password" name="password" id="password">
+        </div>
+
+        <div>
+          <label for="confirm">CONFIRM PASSWORD</label>
+          <input type="password" name="confirm" id="confirm">
+        </div>
+      </div>
     </div>
 
-    <div class="emailphone">
-      <label for="email">EMAIL</label>
-      <input type="email" name="email" id="email" placeholder="email@site.com">
-
-      <label for="phone">PHONE NUMBER</label>
-      <input type="tel" name="phone" id="phone"
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
-    </div>
-
-    <div class="passwords">
-      <label for="password">PASSWORD</label>
-      <input type="password" name="password" id="password">
-
-      <label for="confirm">CONFIRM PASSWORD</label>
-      <input type="password" name="confirm" id="confirm">
-    </div>
 
     <div class="bottom">
-      <input type="submit" value="Create Account">
-      <p>Already have an account? <a href="">Log in</a></p>
+      <input class="submit" type="submit" value="Create Account">
+    </div>
+
+    <div>
+      <p class="alreadyaccount">Already have an account? <a href="">Log in</a>
+      </p>
     </div>
   </form>
 

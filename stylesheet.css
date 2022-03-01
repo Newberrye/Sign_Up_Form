@@ -24,6 +24,8 @@ body {
 img {
   height: 10vh;
   width: 10vw;
+  position: relative;
+  
 }
 
 .odindiv {
@@ -35,6 +37,7 @@ img {
   margin-top: 20vh;
   font-family: special;
   font-size: 5em;
+  height: 15vh;
 }
 
 .credits {
@@ -42,8 +45,65 @@ img {
   align-items: center;
   justify-content: center;
   color: white;
+  font-size: 0.6em;
 }
 
 .credit {
   color: white;
+}
+
+form {
+  padding: 5vw;
+  margin-top: 10vh;
+  margin-right: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+form p {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+form span {
+  font-style: italic;
+}
+
+.aboveform {
+  margin-top: 8vh;
+}
+
+form div {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  float: left;
+  margin-right: 4vw;
+}
+
+input, label {
+  display: block;
+  margin-bottom: 1vh;
+}
+
+input {
+  width: 20vw;
+}
+
+label {
+  font-size: 1em;
+  font-weight: 600;
+  color: gray;
+}
+
+.passwords {
+  display: flex;
+}
+
+input .class {
+  width: 15vw;
+}
+
+.alreadyaccount {
+  font-weight: 500;
+  font-size: .8em;
 }
