@@ -82,11 +82,14 @@ form div {
 
 input, label {
   display: block;
-  margin-bottom: 1vh;
+  margin-bottom: .5vh;
 }
 
 input {
   width: 20vw;
+  height: 3vh;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, .3);
 }
 
 label {
@@ -99,11 +102,19 @@ label {
   display: flex;
 }
 
-input .class {
-  width: 15vw;
+.submit {
+  width: 17.5vw;
+  height: 5vh;
+  background-color: #596D48;
+  color: white;
+  font-weight: bold;
 }
 
 .alreadyaccount {
   font-weight: 500;
   font-size: .8em;
+}
+
+.alreadyaccount a {
+  color: #596D48;
 }
