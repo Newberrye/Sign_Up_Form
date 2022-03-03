@@ -46,33 +46,37 @@
         <label for="firstname">FIRST NAME</label>
         <input type="text" id="firstname" name="firstname">
 
+        <br>
+
         <label for="lastname">LAST NAME</label>
         <input type="text" id="lastmame" name="lastname" required>
       </div>
 
       <div class="emailphone">
         <label for="email">EMAIL</label>
-        <input type="email" name="email" id="email"
-          placeholder="email@site.com" required>
+        <input type="email" name="email" id="email" placeholder="email@site.com"
+          required>
+
+        <br>
 
         <label for="phone">PHONE NUMBER</label>
         <input type="tel" name="phone" id="phone"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" 
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"
           required>
       </div>
 
       <div class="passwords">
         <div>
           <label for="password">PASSWORD</label>
-          <input type="password" name="password" id="password" onkeyup='check();'
-          required>
+          <input type="password" name="password" id="password"
+            onkeyup='check();' required>
           <span id='message'></span>
         </div>
 
         <div>
           <label for="confirm">CONFIRM PASSWORD</label>
           <input type="password" name="confirm" id="confirm" onkeyup='check();'
-          required>
+            required>
         </div>
       </div>
     </div>
